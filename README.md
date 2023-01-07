@@ -1,33 +1,41 @@
-## LabenuSystem:
+<h1 align="center"> LabenuSystem </h1>
 
-Você estuda na Labenu_ há tanto tempo que já parecem anos, não é? Então, hoje, vamos pedir para criar um sistema que represente o básico da nossa organização. 
+##  🕵Sobre
+O LabenuSystem é um projeto de Sistema que representa o básico da organização da Labenu, contendo 3 entidades importantes como Turma, Estudante e Docente.
 
-Ele deve possuir, ao menos, as 3 entidades importantes:
+---
+## 📖 Documentação 
 
-1. Estudantes 
+<a href="#">Clica em mim</a>
 
-    Representa estudantes da nossa instituição. Eles devem possuir: id, nome, email, data de nascimento e os principais hobbies dele. 
+## 📚 Deploy no Render
 
-2. Docente
+<a href="#">Clica em mim</a>
 
-    Representa docentes da nossa instituição. Eles devem possuir: id, nome, email, data de nascimento e todas as especialidades dele. Há 7 especialidades: React, Redux, CSS, Testes, Typescript, Programação Orientada a Objetos e Backend
+---
+## 🚧 Requisitos do Projeto
 
-3. Turma
+- 🌀 Criar estudante;
+- 🌀 Criar docente;
+- 🌀 Criar turma;
+- 🌀 Adicionar estudante na turma;
+- 🌀 Adicionar docente na turma;
+- 🌀 Pegar a idade de algum estudante a partir do id
 
-    Toda turma é composta das seguintes características: id, nome, data de início, data de término, lista de professores responsáveis, uma lista de alunos e módulo atual em que a turma está.
+---
+##  🧒 Quem Fez 
 
-    O módulo pode assumir os valores de 1 a 7 ou `undefined`, indicando que as aulas dessa turma ainda não começaram. Para esse exercício, vamos considerar que existam dois tipos de turma: integral ou noturna. Há uma restrição para o nome das turmas noturnas: tem que terminar com `-na-night`.
+[<img src="https://avatars.githubusercontent.com/u/99925453?v=4" width=115 ><br>](https://github.com/josemorcelli) 
+  <a href=https://github.com/DiegoRiosS-dev>Diego Rios Santos</a>
 
-As funcionalidades básicas são:
+[<img src="https://avatars.githubusercontent.com/u/102266417?v=4" width=115><br>](https://github.com/josemorcelli) 
+  <a href=https://github.com/josemorcelli>José Augusto Pereira Morcelli</a>
+  
+[<img src="https://avatars.githubusercontent.com/u/100731829?v=4" width=115><br>](https://github.com/josemorcelli) 
+  <a href=https://github.com/M-Emmanuel-G>Marcio Emmanuel</a>
 
-→ Criar estudante;
-
-→ Criar docente;
-
-→ Criar turma;
-
-→ Adicionar estudante na turma;
-
-→ Adicionar docente na turma;
-
-→ Pegar a idade de algum estudante a partir do id
+---
+##  🧭 Status do Projeto
+ 
+ - ✔️ Concluido 
+ - Em Andamento
