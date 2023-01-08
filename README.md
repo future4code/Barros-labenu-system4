@@ -37,28 +37,30 @@ O LabenuSystem é um projeto de Sistema que representa o básico da organizaçã
 ---
 ## ⚙️ Rodando o Projeto
 
-Para rodar o repositório é necessário clona-lo:
+```bash
+# Para rodar o repositório é necessário clona-lo:
 
 - git clone https://github.com/future4code/Barros-labenu-system4.git
 
-Agora vamos instalar as dependências:
+# Agora vamos instalar as dependências:
 
 - npm install
 
-Após instaladas as dependências, configure o arquivo .env:
+# Após instaladas as dependências, configure o arquivo .env:
 
 - DB_HOST = ""
 - DB_USER = ""
 - DB_PASSWORD = ""
 - DB_DATABASE = ""
 
-Agora dê o comando seguinte para rodar o migration:
+# Agora dê o comando seguinte para rodar o migration:
 
 - npm run migrations
 
-Após o migration, dê o comando seguinte para rodar a aplicação:
+# Após o migration, dê o comando seguinte para rodar a aplicação:
 
 - npm run dev ou start
+```
 
 
 ---
