@@ -70,13 +70,20 @@ const createTables = async ():Promise<void> => {
 
     INSERT INTO ${table.TABLE_Turma} (id,nome,modulo) 
     VALUES 
-    ("01010101","JBL-Barros",6);
+    ("01010101","JBL-Barros",7),
+    ("02020202","JBL-Jamison",7),
+    ("03030303","JBL-Batman",0);
 
     INSERT INTO ${table.TABLE_Estudante} (id,nome,email,data_nasc,turma_id)
     VALUES
     ("00001","Diego Rios","diegoRS_dev@hotmail.com","01/02/2000","01010101"),
     ("00002","Jose Algusto","joseAlg@gmail.com","01/01/2000","01010101"),
     ("00003","Marcio Emmanuel","marcioE@outlook.com","01/03/2000","01010101");
+
+    INSERT INTO ${table.TABLE_Docente} (id,nome,email,data_nasc,turma_id)
+    VALUES
+    ("002010301","Lab-Boot","labBoot@boot.com","25/10/2015","03030303"),
+    ("002010302","miranha","miranha123.@gmail.com","10/01/1990","02020202");
     
     INSERT INTO ${table.TB_Especialidade} (id, nome)
     VALUES 
@@ -85,6 +92,11 @@ const createTables = async ():Promise<void> => {
     ("012343","POO"),
     ("012344","Typescript"),
     ("012345","CSS");
+
+    INSERT INTO ${table.TB_Docente_Espec} (id,docente_id,especialidade_id)
+    VALUES
+    ("02341227","002010301","012344"),
+    ("03010238","002010302","012342");
 
     INSERT INTO ${table.TB_HobbiesName} (id, nome)
     VALUES
@@ -104,13 +116,9 @@ const createTables = async ():Promise<void> => {
       
   `).then(() => {
       console.log(`Tabelas criadas com sucesso!`)
+      connection.destroy()
   }).catch((error: any) => printError(error))
 
 }
 createTables()
 
-
-// INSERT INTO ${table.TABLE_Docente} VALUES
-//     ("000001","Junior","jr@outlook.com","03/03/1990","01010101"),
-//     ("000002","Andréa", "dea@outlook.com","01/02/1995","01010101"),
-//     ("000003","Fayra","fay@outlook.com","01/07/1997","01010101");
