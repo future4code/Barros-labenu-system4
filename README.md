@@ -7,12 +7,12 @@ O LabenuSystem é um projeto de Sistema que representa o básico da organizaçã
 ---
 ## 📖 Documentação 
 
-<a href="https://documenter.getpostman.com/view/22376367/2s8Z75SphZ" target="blank">Clica na Documentação</a>
+<a href="https://documenter.getpostman.com/view/22376367/2s8Z75SphZ" target="_blank">Clica na Documentação</a>
 
 ---
 ## 📚 Deploy no Render
 
-<a href="https://labenu-system4-a8ju.onrender.com/">Clica no Render</a>
+<a href="https://labenu-system4-a8ju.onrender.com/" target="_blank">Clica no Render</a>
 
 ---
 ## 🚧 Requisitos do Projeto
