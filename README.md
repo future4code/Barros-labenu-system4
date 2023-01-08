@@ -18,9 +18,12 @@ O LabenuSystem é um projeto de Sistema que representa o básico da organizaçã
 - 🌀 Criar estudante;
 - 🌀 Criar docente;
 - 🌀 Criar turma;
-- 🌀 Adicionar estudante na turma;
-- 🌀 Adicionar docente na turma;
+- 🌀 Buscar todas as pessoas docentes;
+- 🌀 Mudar docente de turma;
 - 🌀 Pegar a idade de algum estudante a partir do id
+- 🌀 Buscar turmas ativas
+- 🌀 Mudar turma de módulo
+- 🌀 Buscar estudantes através do nome
 
 ---
 ##  🧒 Quem Fez 
