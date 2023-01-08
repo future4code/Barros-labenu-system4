@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import connection from "../database/connection";
-import { TABLE_Docente } from "../dataBase/tableNames";
+import { TABLE_Docente } from "../class/tableNames";
 
 
 export const buscaDocente = async (req: Request, res: Response):Promise <void> =>{

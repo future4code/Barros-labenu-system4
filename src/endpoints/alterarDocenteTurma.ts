@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import connection from "../database/connection";
-import { TABLE_Docente } from "../dataBase/tableNames";
-import { TABLE_Turma } from "../dataBase/tableNames";
+import { TABLE_Docente } from "../class/tableNames";
+import { TABLE_Turma } from "../class/tableNames";
 
 export const alterarDocenteTurma = async (req:Request, res:Response)=>{
     let codeError = 400;

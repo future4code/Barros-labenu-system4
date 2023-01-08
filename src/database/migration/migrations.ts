@@ -1,5 +1,5 @@
 import connection from "../connection";
-import * as table from "../tableNames";
+import * as table from "../../class/tableNames";
 
 
 

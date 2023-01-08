@@ -1,7 +1,7 @@
 import { Request, Response } from "express"
 import { Turma } from "../class/Turma"
 import connection from "../database/connection"
-import { TABLE_Turma } from "../dataBase/tableNames";
+import { TABLE_Turma } from "../class/tableNames";
 
 export const criarTurma = async (req:Request, res:Response):Promise <void> =>{
     let codeError = 400;
