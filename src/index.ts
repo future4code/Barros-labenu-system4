@@ -16,18 +16,18 @@ import { deleteEstudante } from './endpoints/deleteEstudantes';
 
 
 
-app.get('/labesystem/turmasAtivas', turmasAtivas ) // Busca as turmas ativas
-app.get('/labesystem/estudante/:nome', buscaEstudante ) // Busca aluno pelo nome
-app.get('/labesystem/docente', buscaDocente ) // Busca todos os Docentes
-app.get('/labesystem/turmas', buscaTurmas ) // Busca todos os Turmas
+app.get('/labesystem/turmasAtivas', turmasAtivas ) // Busca as turmas ativas --- CONCLUIDO
+app.get('/labesystem/estudante/:nome', buscaEstudante ) // Busca aluno pelo nome --- CONCLUIDO
+app.get('/labesystem/docente', buscaDocente ) // Busca todos os Docentes --- CONCLUIDO
+app.get('/labesystem/turmas', buscaTurmas ) // Busca todos os Turmas --- CONCLUIDO
 
-app.post('/labesystem/turma', criarTurma) // Adicionar Turma
-app.post('/labesystem/docente', addDocente) // Adicionar Docente
-app.post('/labesystem/estudante', addEstudante) // Adicionar Estudante
+app.post('/labesystem/turma', criarTurma) // Adicionar Turma --- CONCLUIDO
+app.post('/labesystem/docente', addDocente) // Adicionar Docente --- CONCLUIDO
+app.post('/labesystem/estudante', addEstudante) // Adicionar Estudante --- CONCLUIDO
 
-app.patch('/labesystem/turma/:id', alterarModulo ) // Altera o modulo da turma
-app.patch('/labesystem/estudante/:id', alterarEstudanteTurma ) // Altera o turma do Estudante
-app.patch('/labesystem/docente/:id', alterarDocenteTurma ) // Altera o docente do Estudante
+app.patch('/labesystem/turma/:id', alterarModulo ) // Altera o modulo da turma --- CONCLUIDO
+app.patch('/labesystem/estudante/:estudanteId', alterarEstudanteTurma ) // Altera a turma do Estudante --- CONCLUIDO
+app.patch('/labesystem/docente/:docenteId', alterarDocenteTurma ) // Altera a turma do docente --- CONCLUIDO
 
-app.delete('/labesystem/estudante/:id', deleteEstudante ) // remover estudante
+app.delete('/labesystem/estudante/:id', deleteEstudante ) // remover estudante --- CONCLUIDO
 console.log(new Date().toISOString().slice(0,10))
