@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import connection from "../database/connection";
-import { TABLE_Estudante, TABLE_Turma } from "../dataBase/tableNames";
+import { TABLE_Estudante, TABLE_Turma } from "../class/tableNames";
 
 export const alterarEstudanteTurma = async (req:Request, res:Response)=>{
     let codeError = 400;

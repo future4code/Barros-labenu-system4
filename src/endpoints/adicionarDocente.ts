@@ -1,10 +1,9 @@
 import { Request, Response } from "express";
-import knex from "knex";
 import { Docente } from "../class/Docente";
 import connection from "../database/connection";
-import { TABLE_Docente } from "../dataBase/tableNames";
-import { TB_Docente_Espec } from "../dataBase/tableNames";
-import { TB_Especialidade } from "../dataBase/tableNames";
+import { TABLE_Docente } from "../class/tableNames";
+import { TB_Docente_Espec } from "../class/tableNames";
+import { TB_Especialidade } from "../class/tableNames";
 
 export const addDocente =  async (req:Request, res:Response):Promise <void> =>{
     let codeError = 400;

@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import connection from "../database/connection";
-import { TABLE_Estudante, TB_Estudantes_Hobby } from "../dataBase/tableNames";
+import { TABLE_Estudante, TB_Estudantes_Hobby } from "../class/tableNames";
 
 export const deleteEstudante = async (req:Request, res:Response)=>{
     let codeError = 400;

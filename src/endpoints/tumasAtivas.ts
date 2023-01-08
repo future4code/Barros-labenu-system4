@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import connection from "../database/connection";
-import { TABLE_Turma } from "../dataBase/tableNames";
+import { TABLE_Turma } from "../class/tableNames";
 
 
 export const turmasAtivas =  async (req:Request, res:Response):Promise <void> =>{

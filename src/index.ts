@@ -1,7 +1,6 @@
 import { app } from './app';
 import { criarTurma } from './endpoints/criarTurma';
 import { addDocente } from './endpoints/adicionarDocente';
-import { Usuario } from './class/usuario';
 import { alterarModulo } from './endpoints/alterarModuloTurma';
 import { addEstudante } from './endpoints/adicionarEstudante';
 import { turmasAtivas } from './endpoints/tumasAtivas';
@@ -30,4 +29,3 @@ app.patch('/labesystem/estudante/:estudanteId', alterarEstudanteTurma ) // Alter
 app.patch('/labesystem/docente/:docenteId', alterarDocenteTurma ) // Altera a turma do docente --- CONCLUIDO
 
 app.delete('/labesystem/estudante/:id', deleteEstudante ) // remover estudante --- CONCLUIDO
-console.log(new Date().toISOString().slice(0,10))

@@ -1,7 +1,7 @@
 import { Request, Response } from "express"
 import { Estudante } from "../class/Estudante"
 import connection from "../database/connection"
-import { TABLE_Estudante, TB_Estudantes_Hobby, TB_HobbiesName } from "../dataBase/tableNames";
+import { TABLE_Estudante, TB_Estudantes_Hobby, TB_HobbiesName } from "../class/tableNames";
 
 export const addEstudante =  async (req:Request, res:Response):Promise <void> =>{
     let codeError = 400;
