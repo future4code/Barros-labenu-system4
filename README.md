@@ -1,4 +1,4 @@
-<h1 align="center"> LabenuSystem </h1>
+<h1 align="center"><img src="https://readme-typing-svg.demolab.com?font=Exo+2&weight=700&size=43&duration=3000&pause=600&color=43009F&width=600&height=130&lines=Labenu+System+4;Projeto+Feito+com+TypeScript%2C;MySQL%2C+NodeJS%2C+ExpressJS%2C+;Cors%2C+Dotenv%2C+VS+Code."/></h1>
 
 ---
 ##  🕵Sobre
