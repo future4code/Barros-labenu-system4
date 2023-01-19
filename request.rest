@@ -1,0 +1,97 @@
+// Busca todos Docentes
+GET http://localhost:3003/labesystem/docente
+
+// ------- --------- -- -- - //// ------- --------- -- -- - //
+###
+// Buscar estudante por nome ou todos estudantes
+GET http://localhost:3003/labesystem/estudante/:nome
+
+// ------- --------- -- -- - //// ------- --------- -- -- - //
+###
+// buscar turmas ativas
+GET http://localhost:3003/labesystem/turmasAtivas
+
+// ------- --------- -- -- - //// ------- --------- -- -- - //
+###
+//Busca todas turmas
+GET http://localhost:3003/labesystem/turmas
+
+// ------- --------- -- -- - //// ------- --------- -- -- - //
+// ------- --------- -- -- - //// ------- --------- -- -- - //
+// ------- --------- -- -- - //// ------- --------- -- -- - //
+// ------- --------- -- -- - //// ------- --------- -- -- - //
+
+###
+// Cria um novo Docente
+
+POST http://localhost:3003/labesystem/docente
+Content-Type: application/json
+
+{
+  "nome":"Junior",
+  "email":"jr@outlook.com",
+  "data_nasc": "01/01/2000",
+  "turma_id": "01010101",
+  "especialidade": ["JS","POO","CSS"]
+}
+// ------- --------- -- -- - //// ------- --------- -- -- - //
+###
+// Cria uma nova Turma
+
+POST http://localhost:3003/labesystem/turma
+Content-Type: application/json
+
+{
+  "nome":"JBL-Lamarr",
+  "modulo": "7"
+}
+// ------- --------- -- -- - //// ------- --------- -- -- - //
+###
+// Cria um novo Estudante
+
+POST http://localhost:3003/labesystem/estudante
+Content-Type: application/json
+
+{
+  "nome":"teste04",
+  "email": "test04@hotmail.com.br",
+  "data_nasc": "01/01/2021",
+  "turma_id": "01010101",
+  "hobbies": ["Ler Livros","ver animais","comer feijao"]
+}
+
+// ------- --------- -- -- - //// ------- --------- -- -- - //
+// ------- --------- -- -- - //// ------- --------- -- -- - //
+// ------- --------- -- -- - //// ------- --------- -- -- - //
+// ------- --------- -- -- - //// ------- --------- -- -- - //
+
+###
+// Altera a turma do docente
+PATCH http://localhost:3003/labesystem/docente/002010302
+Content-Type: application/json
+
+{
+  "TurmaId": "03030303"
+}
+// ------- --------- -- -- - //// ------- --------- -- -- - //
+###
+// Altera a turma do estudante
+PATCH http://localhost:3003/labesystem/estudante/00001
+Content-Type: application/json
+
+{
+  "TurmaId": "03030303"
+}
+// ------- --------- -- -- - //// ------- --------- -- -- - //
+###
+// Altera / atualiza o modulo da turma
+PATCH http://localhost:3003/labesystem/turma/123123123
+Content-Type: application/json
+
+{
+  "novoModulo": "24"
+}
+// ------- --------- -- -- - //// ------- --------- -- -- - //
+
+###
+DELETE  http://localhost:3003/labesystem/estudante/1673187066040

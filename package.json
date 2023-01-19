@@ -1,0 +1,29 @@
+{
+  "name": "labenusystem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node-dev ./src/index.ts",
+    "start": "tsc && node ./build/index.js",
+    "migrations": "tsc && node ./build/dataBase/migration/migrations.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.15",
+    "@types/knex": "^0.16.1",
+    "cors": "^2.8.5",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "knex": "^2.3.0",
+    "mysql": "^2.18.1"
+  }
+}
